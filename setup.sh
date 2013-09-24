@@ -32,3 +32,5 @@ sudo -u postgres psql -c "alter role radiant with password 'radiant';"
 sudo -u postgres createdb radiant
 
 gem install bundler mysql pg sqlite3
+chown -R vagrant /home/vagrant/.gem
+
