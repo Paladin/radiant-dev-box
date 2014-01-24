@@ -40,5 +40,5 @@ PostgreSQL
 * change username & password to radiant in `config/database.yml`
 
 [vbox-download]: https://www.virtualbox.org/wiki/Downloads
-[vagrant-download]: http://downloads.vagrantup.com/
+[vagrant-download]: http://www.vagrantup.com/downloads.html
 [base-box]: http://files.vagrantup.com/precise64.box
