@@ -19,7 +19,7 @@ If you don't have the [_precise64_ base box][base-box] it will be downloaded.
     vagrant ssh
     cd /vagrant/radiant
     bundle
-    bundle exec rake app:db:bootstrap
+    bundle exec rake db:setup (see note)
     bundle exec rake spec
 
 MySQL
@@ -40,3 +40,5 @@ PostgreSQL
 [vbox-download]: https://www.virtualbox.org/wiki/Downloads
 [vagrant-download]: http://www.vagrantup.com/downloads.html
 [base-box]: http://files.vagrantup.com/precise64.box
+
+__NOTE:__ The rake db:setup command creates the database in the current environment. If it's already created, or you will be creating it in another manner, such as with a test framework that uses it to reset the db, it can be entirely skipped over.
